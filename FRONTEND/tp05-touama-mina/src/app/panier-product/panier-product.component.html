@@ -1,0 +1,13 @@
+<div>
+    <h2>Panier de Produits</h2>
+    
+    <!-- Affichage conditionnel si pas de produits -->
+    <p *ngIf="products.length === 0">Votre panier est vide</p>
+    
+    <!-- Liste des produits -->
+    <div *ngFor="let product of products" class="product-item">
+      <span>{{ product.title }}</span>
+      <span>{{ product.price }}€</span>
+      <button (click)="delProduct(product.id)">Supprimer</button>
+    </div>
+  </div>

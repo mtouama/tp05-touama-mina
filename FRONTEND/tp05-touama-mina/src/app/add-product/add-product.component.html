@@ -1,0 +1,13 @@
+<p>add-product works!</p>
+<form [formGroup]="productForm">
+    <label>title : <input type="text" formControlName="title" /></label>
+    <br />
+    <label>description : <input type="text" formControlName="description" /></label>
+    <br />
+  
+    <label>price : <input type="text" formControlName="price" /></label>
+    <br />
+  
+    <button (click)="addProduct()">Ajouter</button>
+  </form>
+  
